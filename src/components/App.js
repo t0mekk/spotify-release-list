@@ -1,6 +1,8 @@
 import { useLayoutEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import { BackToTop, Message, UpdateMessage } from 'components/common'
+import FollowedArtists from './FollowedArtists';
+
 
 /**
  * Main app component
@@ -16,6 +18,7 @@ function App() {
       <BackToTop />
       <Message />
       <UpdateMessage />
+      <FollowedArtists />
     </div>
   )
 }
